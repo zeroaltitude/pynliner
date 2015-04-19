@@ -15,7 +15,7 @@ select(soup, 'div#main ul a')
 patched to support multiple class selectors here http://code.google.com/p/soupselect/issues/detail?id=4#c0
 """
 import re
-import BeautifulSoup
+import bs4 as BeautifulSoup
 
 attribute_regex = re.compile('\[(?P<attribute>\w+)(?P<operator>[=~\|\^\$\*]?)=?["\']?(?P<value>[^\]"]*)["\']?\]')
 pseudo_class_regex = re.compile(ur':(([^:.#(*\[]|\([^)]+\))+)')
