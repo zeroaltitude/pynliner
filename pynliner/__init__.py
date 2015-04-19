@@ -36,7 +36,7 @@ import re
 import urlparse
 import urllib2
 import cssutils
-from BeautifulSoup import BeautifulSoup, Comment
+from bs4 import BeautifulSoup, Comment
 from soupselect import select
 
 
